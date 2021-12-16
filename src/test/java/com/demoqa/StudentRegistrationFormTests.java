@@ -4,6 +4,9 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -26,12 +29,25 @@ public class StudentRegistrationFormTests {
         $("#dateOfBirthInput").click();
         $("[class*='month-select']").selectOption("May");
         $("[class*='year-select']").selectOption("1995");
-        $("[class*='datepicker__day--010']").click();
+        $("[class*='day--010']").click();
+        $("#uploadPicture").uploadFile(new File("src/test/java/resources/2021-12-10_12-50-29.png"));
         $("#subjectsInput").setValue("Arts").pressEnter();
         $(".custom-checkbox:nth-child(2) .custom-control-label").click();
         $("#currentAddress").setValue("Test");
         $("#react-select-3-input").setValue("Haryana").pressEnter();
         $("#react-select-4-input").setValue("Karnal").pressEnter();
         $("#submit").scrollTo().click();
+
+        $(".modal-content").shouldHave(
+                text("Test Test"),
+                text("test@gmail.com"),
+                text("Male"),
+                text("1231231231"),
+                text("10 May,1995"),
+                text("Arts"),
+                text("Reading"),
+                text("2021-12-10_12-50-29.png"),
+                text("Test"),
+                text("Haryana Karnal"));
     }
 }
