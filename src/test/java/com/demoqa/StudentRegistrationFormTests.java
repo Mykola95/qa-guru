@@ -38,6 +38,7 @@ public class StudentRegistrationFormTests {
         $("#react-select-4-input").setValue("Karnal").pressEnter();
         $("#submit").scrollTo().click();
 
+        $(".modal-header").shouldHave(text("Thanks for submitting the form"));
         $(".modal-content").shouldHave(
                 text("Test Test"),
                 text("test@gmail.com"),
@@ -49,5 +50,7 @@ public class StudentRegistrationFormTests {
                 text("2021-12-10_12-50-29.png"),
                 text("Test"),
                 text("Haryana Karnal"));
+
+        $("#closeLargeModal").click();
     }
 }
