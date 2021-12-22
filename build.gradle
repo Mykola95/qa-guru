@@ -5,7 +5,7 @@ repositories {
     mavenCentral()
 }
 
-def selenideVersion = "6.1.1",
+def selenideVersion = "5.25.1",
     junitVersion = "5.8.2",
     slf4jVersion = "1.7.32"
 
@@ -23,5 +23,7 @@ tasks.withType(JavaCompile) {
 }
 
 test {
+    systemProperty "chromeoptions.prefs","inti.accept_languages=en"
+
     useJUnitPlatform()
 }
