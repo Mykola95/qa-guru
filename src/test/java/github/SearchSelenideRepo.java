@@ -16,7 +16,9 @@ public class SearchSelenideRepo {
         $$("ul.repo-list li").first().$("a").click();
 //      $("ul.repo-list li").$("a").click();
 //       check: в заголовке встречается selenide/selenide
+        sleep(4000);
         $("h1").shouldHave(text("selenide / selenide"));
+
         sleep(5000);
 
 
