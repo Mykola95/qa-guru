@@ -1,7 +1,5 @@
-package alfabank;
+package c.selenide.alfabank;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selectors;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.*;

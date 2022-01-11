@@ -1,4 +1,4 @@
-package github;
+package c.selenide.alfabank;
 
 import org.junit.jupiter.api.Test;
 
@@ -20,7 +20,6 @@ public class SearchSelenideRepo {
         $("h1").shouldHave(text("selenide / selenide"));
 
         sleep(5000);
-
 
 //        ARRANGE (optional)
 //        ACT

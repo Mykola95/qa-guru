@@ -1,4 +1,4 @@
-package github;
+package c.selenide.alfabank;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package selenide;
+package c.selenide.alfabank;
 
 import com.codeborne.selenide.*;
 import org.openqa.selenium.*;
