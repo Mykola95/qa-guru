@@ -1,9 +1,9 @@
-package com.demoqa.pageobjects;
+package com.demoqa.pageobjectsstyle;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import com.demoqa.pageobjects.pages.RegistrationPage;
+import com.demoqa.pageobjectsstyle.pages.RegistrationPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -25,7 +25,6 @@ public class StudentRegistrationFormTests {
 
         registrationPage.typeFirstName("Alex");
         registrationPage.typeLastName("Egorov");
-
         $("#userEmail").setValue("alex@egorov.com");
         $("#genterWrapper").$(byText("Other")).click();
         $("#userNumber").setValue("1231231230");
@@ -47,10 +46,5 @@ public class StudentRegistrationFormTests {
         $(".table-responsive").shouldHave(text("Alex Egorov"), text("alex@egorov.com"));
         $(".table-responsive").$(byText("Student Name"))
                 .parent().shouldHave(text("Alex Egorov"));
-    }
-    @Test
-    void fillFormDslTest() {
-
-
     }
 }
