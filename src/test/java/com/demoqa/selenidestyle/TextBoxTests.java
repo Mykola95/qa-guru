@@ -1,4 +1,4 @@
-package a.selenide.junit.git.guru;
+package com.demoqa.selenidestyle;
 
 import org.junit.jupiter.api.Test;
 

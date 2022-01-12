@@ -1,4 +1,4 @@
-package a.selenide.junit.git.guru;
+package junitexample;
 
 import org.junit.jupiter.api.*;
 

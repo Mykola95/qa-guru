@@ -1,4 +1,4 @@
-package a.selenide.junit.git.guru;
+package cssxpathexamples;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
