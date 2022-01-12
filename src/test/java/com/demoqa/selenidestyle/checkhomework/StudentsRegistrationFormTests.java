@@ -1,4 +1,4 @@
-package b.checkhomework;
+package com.demoqa.selenidestyle.checkhomework;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
