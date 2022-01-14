@@ -1,4 +1,4 @@
-package c.selenide.alfabank;
+package selenideexamples;
 
 import org.junit.jupiter.api.Test;
 

@@ -15,7 +15,7 @@ import static com.demoqa.dslstyle.utils.RandomUtils.getRandomString;
 public class StudentRegistrationFormTests extends TestBase {
     String firstName = getRandomString(10),
             lastName = "Egorov";
-    String email = faker.name().firstName();
+//    String email = faker.name().firstName();
     String email1 = faker.internet().emailAddress();
     @Test
     void fillFormTest() {
